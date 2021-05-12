@@ -1,2 +1,5 @@
-# rust-alt-installer
-Install Rust Altanative for LS, PS and CAT for Debian
+# Rust-ALT-Installer
+
+### Install Rust Altanative for LS, PS and CAT for Debian
+
+
