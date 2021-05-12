@@ -2,11 +2,15 @@
 
 RED="\e[31m"
 GREEN="\e[32m"
+MAGENTA="\e[35m"
+BLUE="\e[34m"
 ENDCOLOR="\e[0m"
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+echo -e "${bold}${BLUE}==================================== ${ENDCOLOR}${normal}"
 echo -e "${bold}${RED}Bat, Exa, Procs Installation Started ${ENDCOLOR}${normal}"
+echo -e "${bold}${BLUE}==================================== ${ENDCOLOR}${normal}"
 
 # Install Bat
 wget -q https://github.com/sharkdp/bat/releases/download/v0.18.0/bat-v0.18.0-x86_64-unknown-linux-gnu.tar.gz
@@ -29,7 +33,13 @@ sudo cp procs /usr/bin/procs
 rm procs procs-v0.11.5-x86_64-lnx.zip
 echo -e "${bold}${GREEN}Procs Installation Complete${ENDCOLOR}${normal}"
 
-echo -e "${bold}${RED}Add These Alias to Your bashrc or zshrc or config.fish ${ENDCOLOR}${normal}"
+echo -e "${bold}${MAGENTA}Add These Alias to Your bashrc or zshrc or config.fish ${ENDCOLOR}${normal}"
 echo -e "${bold}${GREEN}alias ls='exa -l'${ENDCOLOR}${normal}"
 echo -e "${bold}${GREEN}alias cat='bat'${ENDCOLOR}${normal}"
 echo -e "${bold}${GREEN}alias ps='procs'${ENDCOLOR}${normal}"
+
+echo " "
+
+echo -e "${bold}${BLUE}====================================== ${ENDCOLOR}${normal}"
+echo -e "${bold}${RED}Bat, Exa, Procs Installation Completed ${ENDCOLOR}${normal}"
+echo -e "${bold}${BLUE}====================================== ${ENDCOLOR}${normal}"
