@@ -9,25 +9,21 @@ normal=$(tput sgr0)
 echo -e "${bold}${RED}Bat, Exa, Procs Installation Started ${ENDCOLOR}${normal}"
 
 # Install Bat
-echo -e "${bold}${GREEN}Install Bat${ENDCOLOR}${normal}"
-wget https://github.com/sharkdp/bat/releases/download/v0.18.0/bat-v0.18.0-x86_64-unknown-linux-gnu.tar.gz
+wget -q https://github.com/sharkdp/bat/releases/download/v0.18.0/bat-v0.18.0-x86_64-unknown-linux-gnu.tar.gz
 tar -xvf bat-v0.18.0-x86_64-unknown-linux-gnu.tar.gz
 sudo cp bat-v0.18.0-x86_64-unknown-linux-gnu/bat /usr/bin/bat
 rm -rf bat-v0.18.0-x86_64-unknown-linux-gnu bat-v0.18.0-x86_64-unknown-linux-gnu.tar.gz
 echo -e "${bold}${GREEN}Bat Installation Complete${ENDCOLOR}${normal}"
 
 # Install Exa
-echo -e "${bold}${GREEN}Install Exa${ENDCOLOR}${normal}"
-sudo apt install unzip
-wget https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+wget -q https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
 unzip exa-linux-x86_64-v0.10.1.zip
 sudo cp bin/exa /usr/bin/exa
 rm -rf exa-linux-x86_64-v0.10.1.zip bin/ completions/ man/
 echo -e "${bold}${GREEN}Exa Installation Complete${ENDCOLOR}${normal}"
 
 # Install Procs
-echo -e "${bold}${GREEN}Install Procs${ENDCOLOR}${normal}"
-wget https://github.com/dalance/procs/releases/download/v0.11.5/procs-v0.11.5-x86_64-lnx.zip
+wget -q https://github.com/dalance/procs/releases/download/v0.11.5/procs-v0.11.5-x86_64-lnx.zip
 unzip procs-v0.11.5-x86_64-lnx.zip
 sudo cp procs /usr/bin/procs
 rm procs procs-v0.11.5-x86_64-lnx.zip
