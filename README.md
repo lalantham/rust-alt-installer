@@ -15,4 +15,4 @@ chmod +x rust.sh
 ./rust.sh
 ```
 
-### LalanthaM
+###### Lalantha Madhushan
